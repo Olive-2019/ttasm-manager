@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TTASM</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TTASM</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Google fonts - Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <!-- jQuery Circle-->
+    <link rel="stylesheet" href="css/grasp_mobile_progress_circle-1.0.0.min.css">
+    <!-- Custom Scrollbar-->
+    <link rel="stylesheet" href="vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+</head>
+<body>
+<script src = "vendor/jquery/jquery.min.js"></script>
+<script src="js/include.js"></script>
+<script src = "page-js/global.js"></script>
+<script src = "page-js/AddTrain.js"></script>
+<include src="left.html"></include>
+
+<div class="page login-page">
+    <div class="container">
+        <div class="form-outer text-center d-flex align-items-center">
+            <div class="form-inner">
+                <div class="logo text-uppercase"><span>添加</span><strong class="text-primary">列车</strong></div>
+
+<!--                <form class="text-left form-validate" action="/Manage_Train/add_train" method="GET">-->
+                    <div class="form-group-material">
+                        <input id="trainId" type="text" name="trainId"  class="input-material" placeholder = "列车编号">
+                    </div>
+                    <div class="form-group-material">
+                        <input id="capacity" type="text" name="capacity" placeholder = "列车限载数量" class="input-material">
+                    </div>
+                    <div class="form-group text-center">
+                        <input id="add" type="submit" value="新增列车" class="btn btn-primary" onclick = "addTrain()">
+                    </div>
+<!--                </form>-->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
