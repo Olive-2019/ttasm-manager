@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ttasm?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true&useSSL=false #
     username: root
-    password: 1346852ljy
+    password: Lam
 
     hikari:
       minimum-idle: 5

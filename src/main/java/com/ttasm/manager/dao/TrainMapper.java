@@ -16,6 +16,7 @@ public interface TrainMapper {
     int insert(Train row);
 
 
+    @Select("select * from train where train_id = #{trainId}")
     Train selectByPrimaryKey(String trainId);
 
     @Select("select * from train")
